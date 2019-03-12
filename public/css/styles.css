@@ -1,3 +1,48 @@
+.ct-btn-scroll {
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 800px;
+	z-index: 9;
+	border-radius: 70%;
+	-webkit-transition: background-color 0.25s ease-in-out;
+	transition: background-color 0.25s ease-in-out;
+}
+a { color: #003780; text-decoration: none; }
+
+.arrow {
+	text-align: center;
+	margin: 8% 0;
+}
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+.panel-title {
+	font-size: 20px;
+	font-weight: bolder;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
 .navbar{
 	margin-bottom: 0px;
 }
