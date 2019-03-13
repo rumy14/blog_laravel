@@ -1,3 +1,3 @@
       <hr>
 
-      <p class="text-center">Copyright Md ITEE Exam - All Rights Reserved</p>
+      <p class="text-center">Copyright  {{ date('Y') }} <a href="{{ url('https://iteebd.blogspot.com/') }}"  target="_blank">ITEE Exam</a>   - All Rights Reserved</p>
