@@ -55,5 +55,7 @@ class PagesController extends Controller {
 		return redirect('/');
 	}
 
-
+    public function pageNotFound(){
+        return view('errors.503');
+    }
 }

@@ -4,8 +4,10 @@
 
 @section('content')
         <div class="row">
-            <div class="col-md-12">
-                <h1>Contact Me</h1>
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <h1>Contact US</h1>
                 <hr>
                 <form action="{{ url('contact') }}" method="POST">
                     {{ csrf_field() }}
@@ -24,8 +26,10 @@
                         <textarea id="message" name="message" class="form-control">Type your message here...</textarea>
                     </div>
 
-                    <input type="submit" value="Send Message" class="btn btn-success">
+                    <input type="submit" value="Send Message" class="btn btn-success btn-block">
                 </form>
+            </div>
+            <div class="col-md-3">
             </div>
         </div>
 @endsection

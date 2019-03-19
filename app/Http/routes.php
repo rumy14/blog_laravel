@@ -34,4 +34,5 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('about', 'PagesController@getAbout');
 	Route::get('/', 'PagesController@getIndex');
 	Route::resource('posts', 'PostController');
+	Route::get('pagenotfound',['as' => 'notfound', 'uses' => 'PagesController@pageNotFound']);
 });

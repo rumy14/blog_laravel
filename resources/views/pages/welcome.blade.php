@@ -5,10 +5,10 @@
 @section('content')
     <div class="row limit">
         <div class="cont">
-            <img src="https://www.ittiam.com/wp-content/uploads/2018/02/thinkode-blog-banner-image.jpg" alt="Norway" style="width:100%;">
+            <img src="https://www.ittiam.com/wp-content/uploads/2018/02/thinkode-blog-banner-image.jpg" alt="Norway" style="width:100%;" class="img-responsive">
             <div class="centered">
-                <img src="{{{ asset('images/rumi.jpg') }}}" class="img-circle" alt="Cinque Terre"><br>
-                <a class="ct-btn-scroll ct-js-btn-scroll" href="#scrolly"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+                <img src="{{{ asset('images/rumi.jpg') }}}" class="img-circle img-responsive" alt="Cinque Terre"><br>
+                <a class="ct-btn-scroll ct-js-btn-scroll" href="#mainBody"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png" class="img-responsive"></a>
             </div>
             <div class="text-block">
                 <h4>Software Testing Tools</h4>
@@ -17,19 +17,20 @@
         </div>
     </div><br>
 
-    <div class="row" id="scrolly">
+    <div class="row" id="mainBody">
         <div class="col-md-1">
         </div>
         <div class="col-md-2">
             <div class="row">
                 <div class="list-group">
                     <div class="list-group-item active">
+                        <h4 class="list-group-item-heading">Mission</h4>
+                        <ul class="mision">
+                            <li>Fun & Free Education for all</li>
+                        </ul>
                         <h4 class="list-group-item-heading">Vision</h4>
                         <ul class="vision">
-                            <li>Provide world class preparatory tools</li>
-                            <li>One stop solution</li>
-                            <li>Make technical learning easy, interesting</li>
-                            <li>Make coaching accessible to all</li>
+                            <li>To bring all feasible courses,online</li>
                         </ul>
                     </div>
                 </div>
@@ -72,9 +73,18 @@
                     <h1 class="panel-title">Apps Design & Development</h1>
                 </div>
                 <div class="panel-body">
-                    <p class="mb-1">The same is true of your blog homepage design: it could be the make-or-break reason why someone decides to dig deeper into your content or
-                        to leave the site and search elsewhere. If that sounds daunting to you, don't panic. Creating a good blog homepage that makes readers stick around is
-                        all about making the right choices in what content you choose to display, and I’ve got some advice to help you do just that. The purpose of a blog homepage.
+                    <p class="mb-1">Software Testing Tools is a professional web design company providing web development solutions for corporate or
+                        individuals interested in outsourcing their web design and web application development needs. Driven by values and founded on
+                        strong white hat business ethics, We have a unique space among 100's (hundreds) of so-called Professional Web Development and
+                        Web Design Companies.
+                    </p>
+                    <p class="mb-1">
+                        Rather than providing just a product or service, we provide the best available solution that fits our client's financial and
+                        functional requirements. Our mission is to provide customized and usable solutions which maximize our client's return on investment.
+                        While Software Testing Tools is a Technology Consultancy with a multitude of services, our range of in-house design and development
+                        services include Custom Website Design and Web Development using ASP and CMS based PHP web technologies, Custom Ecommerce Shopping
+                        Carts, Rich Internet Applications, Web Application Development, Desktop Application, Website Marketing, Mobile Website Development
+                        and iphone Apps Development.
                     </p>
                 </div>
             </div>
@@ -83,9 +93,16 @@
                     <h3 class="panel-title">Freelance Consultant / Training</h3>
                 </div>
                 <div class="panel-body">
-                    <p class="mb-1">The same is true of your blog homepage design: it could be the make-or-break reason why someone decides to dig deeper into your content or
-                        to leave the site and search elsewhere. If that sounds daunting to you, don't panic. Creating a good blog homepage that makes readers stick around is
-                        all about making the right choices in what content you choose to display, and I’ve got some advice to help you do just that. The purpose of a blog homepage.
+                    <p class="mb-1">As one of the leading information technology consulting firms, We delivers custom-tailored
+                        IT consultancy services and business IT support for organizations of any size. By partnering with STT,
+                        we can help lead your organization forward with highly-effective IT strategies. Implement innovative solutions
+                        with our IT consultancy services today.
+                    </p>
+                    <p class="mb-1">
+                        Software Testing Tools, promoted by an one man, is a organization in the field of training specially
+                        software development, testing and ITEE Exam with a presence in more than 5 countries and having trained more
+                        than 100 students since inception. We are the institute for preparation for ITEE Exam. The technical team at
+                        STT comprises Post Graduates and eminent professors teaching for us for a number of years.
                     </p>
                 </div>
             </div>
@@ -94,9 +111,13 @@
                     <h3 class="panel-title">Testing and Documenting</h3>
                 </div>
                 <div class="panel-body">
-                    <p class="mb-1">The same is true of your blog homepage design: it could be the make-or-break reason why someone decides to dig deeper into your content or
-                        to leave the site and search elsewhere. If that sounds daunting to you, don't panic. Creating a good blog homepage that makes readers stick around is
-                        all about making the right choices in what content you choose to display, and I’ve got some advice to help you do just that. The purpose of a blog homepage.
+                    <p class="mb-1">Founded in 2015 and based in USA, Software Testing Tools begun leading independent software testing company.
+                        With 250+ global QA resources in 8 different countries offering more than 10 QA Testing Services and covering all time zones.
+                        We are global Software Quality Assurance and Testing space. Serving 30+ clients from Fortune 5to start ups in many countries,
+                        We supports applications in three  different industries. With unique products propositions from a crowdsourcing platform with
+                        a pool of 100 crowdsourced testers to a test management platform, unique and economical services offerings and QA education
+                        from e-learning and corporate training, Software Testing Tools continues its growth, expansion and footprint around the globe
+                        to become the top and the best Software Testing Company in the World.
                     </p>
                 </div>
             </div>
