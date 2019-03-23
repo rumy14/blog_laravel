@@ -56,6 +56,8 @@ class Handler extends ExceptionHandler
                 default:
                     return $this->renderHttpException($e);
             }
+        }else if($e instanceof ModelNotFoundException) {
+            return redirect()->route('notfound');
         }else{
             return parent::render($request, $e);
         }

@@ -18,7 +18,7 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-6"><img src="https://testinginstitute.com/images/mission.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="{{{ asset('images/mission.png') }}}" alt="" class="img-responsive"></div>
                     <div class="col-md-6">
                         <h4 class="list-group-item-heading">Vision</h4>
                         <ul class="vision">
