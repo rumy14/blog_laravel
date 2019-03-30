@@ -6,16 +6,19 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Post;
-
+use App\Category;
 class BlogController extends Controller
 {
-    
 	public function getIndex() {
 		$posts = Post::paginate(4);
-
-		return view('blog.index')->withPosts($posts);
+        $categories = Category::all()->sortBy("name");
+		return view('blog.index')->withPosts($posts)->withCategories($categories);
 	}
-
+    public function getCategory($id) {
+        $posts = Post::where('category_id', $id)->paginate(4);
+        $categories = Category::all()->sortBy("name");
+        return view('blog.index')->withPosts($posts)->withCategories($categories);
+    }
     public function getSingle($slug) {
     	// fetch from the DB based on slug
     	$post = Post::where('slug', '=', $slug)->firstOrFail();
