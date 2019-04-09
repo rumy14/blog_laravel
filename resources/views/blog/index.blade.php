@@ -27,6 +27,7 @@
 							<a class="pull-left" href="{{ route('blog.single', $post->slug) }}">
 								<img class="media-object img-thumbnail" src="{{{asset('/images/' . $post->image)}}}" height="150" width="150">
 							</a>
+{{--							<input type="hidden" name="view_count" value="{{ $post->view_count }}">--}}
 							<div class="media-body">
 								<h4 class="media-heading">{{ $post->title }}</h4>
 								<h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5>
@@ -62,22 +63,18 @@
 					<li class="list-group-item active">
 						<h4>Popular Post</h4>
 					</li>
-					<li class="list-group-item">
-						<span class="badge">14</span>
-						Cras justo odio
-					</li>
-					<li class="list-group-item">
-						<span class="badge">14</span>
-						Cras justo odio
-					</li>
-					<li class="list-group-item">
-						<span class="badge">14</span>
-						Cras justo odio
-					</li>
-					<li class="list-group-item">
-						<span class="badge">14</span>
-						Cras justo odio
-					</li>
+{{--					@forelse ($popPosts->sortByDesc('view_count')->slice(0, 4) as $post)--}}
+					@forelse ($popPosts as $post)
+						<li class="list-group-item">
+							<span class="badge"><i class="fas fa-eye"></i>  {{ $post->view_count }}</span>
+							<h4 class="media-heading">{{ substr(strip_tags($post->title), 0, 25) }}{{ strlen(strip_tags($post->title)) > 25 ? '' : "" }}</h4>
+						</li>
+					@empty
+						<li class="list-group-item">
+							<span class="badge">&#128540;</span>
+								No post
+						</li>
+					@endforelse
 				</ul>
 			</div>
 		</div>

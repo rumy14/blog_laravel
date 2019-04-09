@@ -3,7 +3,8 @@
 @section('title', "| $titleTag")
 
 @section('content')
-
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=1447509242045173&autoLogAppEvents=1"></script>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			@if(!empty($post->image))
@@ -13,6 +14,12 @@
 			<p>{!! $post->body !!}</p>
 			<hr>
 			<p>Posted In: {{ $post->category->name }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="sharethis-inline-share-buttons"></div>
+		</div>
 		</div>
 	</div>
 

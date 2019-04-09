@@ -6,8 +6,9 @@
 <title>STT @yield('title')</title> <!-- CHANGE THIS TITLE FOR EACH PAGE -->
 <link rel="shortcut icon" href="{{{ asset('images/favicon.png') }}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 {{ Html::style('css/styles.css') }}
-
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ca072f99852eb0011ce9ea6&product=inline-share-buttons' async='async'></script>
 @yield('stylesheets')
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

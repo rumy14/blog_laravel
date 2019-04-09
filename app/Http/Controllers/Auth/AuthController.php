@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Http\Request;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-
+use Session;
+use Mail;
 class AuthController extends Controller
 {
     /*
@@ -68,5 +70,37 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    protected function getCredentials(Request $request)
+    {
+        //return $request->only($this->loginUsername(), 'password');
+        return ['email' =>$request->{$this->loginUsername()}, 'password' =>$request->password, 'status'=>'1'];
+    }
+
+    public function register(Request $request)
+    {
+        //dd($request->email);
+        $data = array(
+            'email' => $request->email,
+            'subject' => 'Registration'
+        );
+
+        Mail::send('emails.register', $data, function($message) use ($data){
+            $message->to($data['email']);
+            $message->from('info@sqatool.com', 'Software Testing Tools');
+            $message->subject($data['subject']);
+        });
+        $validator = $this->validator($request->all());
+
+        if ($validator->fails()) {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+
+        $this->create($request->all());
+        Session::flash('success', 'Successfully Registered (*) Check your mail, Wait for Admin Activation');
+        return  redirect()->back();
     }
 }
