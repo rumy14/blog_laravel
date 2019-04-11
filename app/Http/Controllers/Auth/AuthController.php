@@ -83,7 +83,8 @@ class AuthController extends Controller
         //dd($request->email);
         $data = array(
             'email' => $request->email,
-            'subject' => 'Registration'
+            'name' => $request->name,
+            'subject' => 'Register'
         );
 
         Mail::send('emails.register', $data, function($message) use ($data){
