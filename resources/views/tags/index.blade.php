@@ -15,7 +15,7 @@
 					</tr>
 				</thead>
 
-				<tbody>
+				<tbody id="idtagtest">
 					@foreach ($tags as $tag)
 					<tr>
 						<th>{{ $tag->id }}</th>
@@ -28,7 +28,7 @@
 
 		<div class="col-md-3">
 			<div class="well">
-				{!! Form::open(['route' => 'tags.store', 'method' => 'POST']) !!}
+				{!! Form::open(['route' => 'tags.store', 'method' => 'POST', 'id' => 'contactForm1']) !!}
 					<h2>New Tag</h2>
 					{{ Form::label('name', 'Name:') }}
 					{{ Form::text('name', null, ['class' => 'form-control']) }}

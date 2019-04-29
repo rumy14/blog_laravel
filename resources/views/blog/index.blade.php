@@ -29,7 +29,7 @@
 							</a>
 {{--							<input type="hidden" name="view_count" value="{{ $post->view_count }}">--}}
 							<div class="media-body">
-								<h4 class="media-heading">{{ $post->title }}</h4>
+								<h4 class="media-heading">{{ ucfirst($post->title) }}</h4>
 								<h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5>
 								<p>{{ substr(strip_tags($post->body), 0, 250) }}{{ strlen(strip_tags($post->body)) > 250 ? '  ........' : "" }}
 									<br><a href="{{ route('blog.single', $post->slug) }}" class="btn btn-primary btn-sm">Read More</a></p>
@@ -67,7 +67,7 @@
 					@forelse ($popPosts as $post)
 						<li class="list-group-item">
 							<span class="badge"><i class="fas fa-eye"></i>  {{ $post->view_count }}</span>
-							<h4 class="media-heading">{{ substr(strip_tags($post->title), 0, 25) }}{{ strlen(strip_tags($post->title)) > 25 ? '' : "" }}</h4>
+							<h4 class="media-heading">{{ substr(strip_tags($post->title), 0, 25) }}{{ strlen(strip_tags(ucfirst($post->title))) > 25 ? '' : "" }}</h4>
 						</li>
 					@empty
 						<li class="list-group-item">

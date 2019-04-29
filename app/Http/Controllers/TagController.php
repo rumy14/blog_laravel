@@ -40,8 +40,8 @@ class TagController extends Controller
         $tag->save();
 
         Session::flash('success', 'New Tag was successfully created!');
-
-        return redirect()->route('tags.index');
+        return response()->json($tag);
+        //return redirect()->route('tags.index');
     }
 
     /**

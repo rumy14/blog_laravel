@@ -35,4 +35,31 @@
         });
     });
 </script>
+
+<script type="text/javascript">
+    var frm = $('#contactForm1');
+
+    frm.submit(function (e) {
+
+        e.preventDefault();
+
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                //$('#table').append("<tr class='post" + data.id + "'>"+
+                console.log('Submission was successful.');
+                console.log(data);
+                console.log(data.name);
+                $('#idtagtest').append("<tr><th>"+data.id+"</th> <td><a href=''>"+data.name+"</a></td></tr>");
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    });
+</script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

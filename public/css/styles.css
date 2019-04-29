@@ -327,3 +327,22 @@ iPad 3
 	}
 }
 
+/*Like*/
+.like-btn {
+	background: #002659;
+	border: 1px solid #3498db;
+	border-radius: 6px;
+	padding: 0px 0px;
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+	min-width: 12rem;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 2;
+}
+
+.like-btn__spinner {
+	vertical-align: middle;
+}
+

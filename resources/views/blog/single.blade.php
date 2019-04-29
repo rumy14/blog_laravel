@@ -10,9 +10,15 @@
 			@if(!empty($post->image))
 				<img class="img-fluid" src="{{asset('/images/' . $post->image)}}" width="1000" height="200" />
 			@endif
-			<h1>{{ $post->title }}</h1>
+			<h1 id="title">{{ $post->title }}</h1>
 			<p>{!! $post->body !!}</p>
 			<hr>
+				@if (Auth::check())
+					<div id = 'msg'></div>
+					<?php
+						echo Form::button('Replace Message',['class' => 'btn likebtn']);
+					?>
+				@endif
 			<p>Posted In: {{ $post->category->name }}</p>
 		</div>
 	</div>
@@ -29,15 +35,12 @@
 			@foreach($post->comments as $comment)
 				<div class="comment">
 					<div class="author-info">
-
 						<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" class="author-image">
 						<div class="author-name">
 							<h4>{{ $comment->name }}</h4>
 							<p class="author-time">{{ date('F dS, Y - g:iA' ,strtotime($comment->created_at)) }}</p>
 						</div>
-
 					</div>
-
 					<div class="comment-content">
 						{{ $comment->comment }}
 					</div>
