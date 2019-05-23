@@ -37,22 +37,24 @@
 </script>
 
 <script type="text/javascript">
-    var frm = $('#contactForm1');
+    var frm = $('#tagadd');
 
     frm.submit(function (e) {
-
         e.preventDefault();
-
         $.ajax({
             type: frm.attr('method'),
             url: frm.attr('action'),
             data: frm.serialize(),
             success: function (data) {
-                //$('#table').append("<tr class='post" + data.id + "'>"+
-                console.log('Submission was successful.');
-                console.log(data);
-                console.log(data.name);
-                $('#idtagtest').append("<tr><th>"+data.id+"</th> <td><a href=''>"+data.name+"</a></td></tr>");
+                var tag = "<tr><th>"+data.id+"</th> <td><a href='http://localhost:8000/tags/"+data.id+"'>"+data.name+"</a></td></tr>";
+                $('#idtag').append(tag);
+
+                $(".msg").html('<div class="alert alert-success">Tag Successfully Added!</div>');
+                window.setTimeout(function() {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                        $(this).remove();
+                    });
+                }, 3000);
             },
             error: function (data) {
                 console.log('An error occurred.');
@@ -61,5 +63,35 @@
         });
     });
 </script>
+
+<script type="text/javascript">
+    var frm = $('#catadd');
+
+    frm.submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                var cat = "<tr><th>"+data.id+"</th> <td>"+data.name+"</td></tr>";
+                $('#idcat').append(cat);
+
+                $(".msg").html('<div class="alert alert-success">Category Successfully Added!</div>');
+                window.setTimeout(function() {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                        $(this).remove();
+                    });
+                }, 3000);
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    });
+</script>
+
+
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

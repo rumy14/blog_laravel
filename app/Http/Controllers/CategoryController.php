@@ -48,9 +48,9 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
 
-        Session::flash('success', 'New Category has been created');
-
-        return redirect()->route('categories.index');
+        //Session::flash('success', 'New Category has been created');
+        return response()->json($category);
+        //return redirect()->route('categories.index');
     }
 
     /**

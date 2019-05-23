@@ -15,7 +15,7 @@
 					</tr>
 				</thead>
 
-				<tbody>
+				<tbody id="idcat">
 					@foreach ($categories as $category)
 					<tr>
 						<th>{{ $category->id }}</th>
@@ -28,7 +28,7 @@
 
 		<div class="col-md-3">
 			<div class="well">
-				{!! Form::open(['route' => 'categories.store', 'method' => 'POST']) !!}
+				{!! Form::open(['route' => 'categories.store', 'method' => 'POST',  'id' => 'catadd']) !!}
 					<h2>New Category</h2>
 					{{ Form::label('name', 'Name:') }}
 					{{ Form::text('name', null, ['class' => 'form-control']) }}
