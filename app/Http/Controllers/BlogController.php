@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Post;
 use App\Category;
+use App\LikePost;
+use Illuminate\Support\Facades\Auth;
+
 class BlogController extends Controller
 {
 	public function getIndex() {
@@ -27,6 +30,10 @@ class BlogController extends Controller
         $count = $post->view_count;
         $post->view_count = ++$count;
         $post->save();
-    	return view('blog.single')->withPost($post);
+
+        //var_dump($post['id']);die();
+        $like = Likepost::where('post_id', $post['id'])->where('user_id', Auth::id())->get();
+        $likecount = Likepost::where('likeposts','=','1')->where('post_id', $post['id'])->count();
+    	return view('blog.single')->withPost($post)->with('like',$like)->with('likecount',$likecount);
     }
 }

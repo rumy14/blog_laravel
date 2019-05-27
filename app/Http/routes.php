@@ -25,9 +25,9 @@ Route::group(['middleware' => ['web']], function () {
 	Route::put('comments/{id}', ['uses' => 'CommentsController@update', 'as' => 'comments.update']);
 	Route::delete('comments/{id}', ['uses' => 'CommentsController@destroy', 'as' => 'comments.destroy']);
 	Route::get('comments/{id}/delete', ['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
+
     //Like
-    //Route::post('/like','AjaxController@like');
-    Route::post('/likepost',['uses' => 'AjaxController@likePost']);
+    Route::post('likepost/{post_id}',['uses' => 'LikePostController@like', 'as' => 'like']);
 
 	Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
 	Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);

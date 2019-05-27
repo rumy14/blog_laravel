@@ -46,9 +46,8 @@
             url: frm.attr('action'),
             data: frm.serialize(),
             success: function (data) {
-                var tag = "<tr><th>"+data.id+"</th> <td><a href='http://localhost:8000/tags/"+data.id+"'>"+data.name+"</a></td></tr>";
+                var tag = '<tr><th>"+data.id+"</th> <td><a href='http://localhost:8000/tags/"+data.id+"'>"+data.name+"</a></td></tr>';
                 $('#idtag').append(tag);
-
                 $(".msg").html('<div class="alert alert-success">Tag Successfully Added!</div>');
                 window.setTimeout(function() {
                     $(".alert").fadeTo(500, 0).slideUp(500, function(){

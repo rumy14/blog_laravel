@@ -13,12 +13,27 @@
 			<h1 id="title">{{ $post->title }}</h1>
 			<p>{!! $post->body !!}</p>
 			<hr>
-				@if (Auth::check())
-					<div id = 'msg'></div>
-					<?php
-						echo Form::button('Replace Message',['class' => 'btn likebtn']);
-					?>
+				@if(Auth::user())
+			{{ Form::open(['route' => ['like', $post->id], 'method' => 'POST']) }}
+
+			<div class="row">
+				<div class="col-md-3">
+					@if(!$like->isEmpty())
+						@if($like[0]['likeposts'] == 0)
+							{{ Form::submit('Like', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
+						@else
+							{{ Form::submit('Unlike', ['class' => 'btn btn-danger btn-block', 'style' => 'margin-top:15px;']) }}
+						@endif
+					@else
+						{{ Form::submit('Like', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
+					@endif
+				</div>
+				<div class="col-md-6"><span class="badge badge-pill badge-info" style='margin-top:15px;'>{{$likecount}}</span></div>
+			</div>
+
+			{{ Form::close() }}
 				@endif
+
 			<p>Posted In: {{ $post->category->name }}</p>
 		</div>
 	</div>

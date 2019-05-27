@@ -5,47 +5,7 @@
 @section('content')
     <div class="row limit">
         <div class="cont">
-            <img src="{{{ asset('images/blog-banner-image.jpg') }}}" alt="STT Banner" style="width:100%;" class="img-responsive">
-            <div class="centered">
-                <img src="{{{ asset('images/rumi.jpg') }}}" class="img-circle img-responsive" alt="Cinque Terre"><br>
-                <a class="ct-btn-scroll ct-js-btn-scroll" href="#mainBody"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png" class="img-responsive"></a>
-            </div>
-            <div class="text-block-12">
-                <h4>VIDEO</h4>
-            </div>
-            <div class="text-block-11">
-                <h4>MOBILE DEVELOPMENT</h4>
-            </div>
-            <div class="text-block-10">
-                <h4>GUEST POSTS | HOW TO </h4>
-            </div>
-            <div class="text-block-9">
-                <h4>EMPLOYEE DEVELOPMENT</h4>
-            </div>
-            <div class="text-block-8">
-                <h4>ELEARNING INITIATIVES</h4>
-            </div>
-            <div class="text-block-7">
-                <h4>ELEARNING</h4>
-            </div>
-            <div class="text-block-6">
-                <h4>CURATED LISTS | CURATION</h4>
-            </div>
-            <div class="text-block-5">
-                <h4>CULTURE; ELEARNING</h4>
-            </div>
-            <div class="text-block-4">
-                <h4>CONTENT DESIGN | COURSE LISTS</h4>
-            </div>
-            <div class="text-block-3">
-                <h4>COMPLIANCE COURSES</h4>
-            </div>
-            <div class="text-block-2">
-                <h4>BUYING ELEARNING COURSES</h4>
-            </div>
-            <div class="text-block-1">
-                <h4>BUSINESS BUSINESS SKILLS POSTS</h4>
-            </div>
+            <img src="{{{ asset('images/banner.jpg') }}}" alt="STT Banner" style="width:100%;" class="img-responsive">
         </div>
     </div><br>
 
