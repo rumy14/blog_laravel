@@ -36,4 +36,10 @@ class BlogController extends Controller
         $likecount = Likepost::where('likeposts','=','1')->where('post_id', $post['id'])->count();
     	return view('blog.single')->withPost($post)->with('like',$like)->with('likecount',$likecount);
     }
+
+    public function getPostSearch(Request $request) {
+        $title = $request->input('title');
+        $posts = Post::where('title', 'LIKE', '%' . $title . '%')->get();
+        return view('blog.search_blog', compact('posts'));
+    }
 }

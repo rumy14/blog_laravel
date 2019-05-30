@@ -29,6 +29,9 @@ Route::group(['middleware' => ['web']], function () {
     //Like
     Route::post('likepost/{post_id}',['uses' => 'LikePostController@like', 'as' => 'like']);
 
+    //Search Post
+    Route::post('searchpost',['uses' => 'BlogController@getPostSearch', 'as' => 'searchpost']);
+
 	Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
 	Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);
     Route::get('contact', 'PagesController@getContact');
