@@ -35,30 +35,27 @@
 	<div class="row">
 		<div class="col-md-1">
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-7">
 			<div class="row">
 				<br>
 				@forelse ($posts as $post)
-					<div class="media">
-						<a class="pull-left" href="{{ route('blog.single', $post->slug) }}">
-							<img class="media-object img-thumbnail" src="{{{asset('/images/' . $post->image)}}}" height="150" width="150">
-						</a>
-{{--							<input type="hidden" name="view_count" value="{{ $post->view_count }}">--}}
-						<div class="media-body">
+					<div class="thumbnail">
+						<div class="caption">
+							<a class="pull-left" href="{{ route('blog.single', $post->slug) }}" style="margin-right: 10px;">
+								<img class="media-object img-thumbnail" src="{{{asset('/images/' . $post->image)}}}" height="180" width="190">
+							</a>
 							<h4 class="media-heading">{{ ucfirst($post->title) }}</h4>
-							<h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5>
-							<p>{{ substr(strip_tags($post->body), 0, 250) }}{{ strlen(strip_tags($post->body)) > 250 ? '  ........' : "" }}
-								<br><a href="{{ route('blog.single', $post->slug) }}" class="btn btn-primary btn-sm">Read More</a></p>
+							<h6>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h6>
+							<p>{{ substr(strip_tags($post->body), 0, 120) }}{{ strlen(strip_tags($post->body)) > 250 ? '  ........' : "" }}
+								<a href="{{ route('blog.single', $post->slug) }}">Read More</a></p>
 						</div>
 					</div>
 					<hr>
 				@empty
 					<div class="row">
-						<div class="col-md-8">
-							<br>
-							<div class="alert alert-danger" role="alert">
-								<p>List is empty!! &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:30px">&#128540;&#128540;&#128540;</span></p>
-							</div>
+						<br>
+						<div class="alert alert-danger" role="alert">
+							<p>List is empty!! &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:30px">&#128540;&#128540;&#128540;</span></p>
 						</div>
 					</div>
 				@endforelse
@@ -70,11 +67,10 @@
 					</div>
 			</div>
 		</div>
-		<br>
-		<div class="col-md-3">
-			<p>Idemne potest esse dies saepius, qui semel fuit? Quae cum dixisset paulumque institisset, Quid est? Ergo, inquit, tibi Q. An vero,
-				inquit, quisquam potest probare, quod perceptfum, quod. Pisone in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q.</p>
-		</div>
+{{--		<br>--}}
+{{--		<div class="col-md-1">--}}
+
+{{--		</div>--}}
 		<div class="col-md-3">
 			<div class="row">
 				<ul class="list-group">

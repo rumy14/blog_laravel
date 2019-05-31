@@ -121,4 +121,6 @@ a { color: #003780; text-decoration: none; }
 .like-btn__spinner {
 	vertical-align: middle;
 }
-
+.slider-size {
+	height: 400px;
+}
