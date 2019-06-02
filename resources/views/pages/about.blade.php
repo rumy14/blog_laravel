@@ -3,6 +3,7 @@
 @section('title', '| About')
 
 @section('content')
+    <br><br>
         <div class="row">
             <div class="col-md-3">
             </div>
@@ -18,7 +19,7 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-6"><img src="{{{ asset('images/mission.png') }}}" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="{{{ asset('images/mission.jpg') }}}" alt="" class="img-responsive"></div>
                     <div class="col-md-6">
                         <h4 class="list-group-item-heading">Vision</h4>
                         <ul class="vision">
@@ -40,7 +41,7 @@
                         <li>To provide a framework for assessing organizational testing practices and procedures.
                         <li>To partner with different software quality groups around the world to assure continuity of information flow among testing professionals.</li>
                         <li>To provide an open forum for discussing different testing issues.</li>
-                        <li>In order to follow its charter, IIST relies on the support and guidance from
+                        <li>In order to follow its charter, we relies on the support and guidance from
                             its Advisory Board which consists of authorities and practitioners in the field.</li>
                     </ul>
                 </div>
