@@ -42,4 +42,8 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('pagenotfound',['as' => 'notfound', 'uses' => 'PagesController@pageNotFound']);
 
     Route::get('category/{category}', ['uses' => 'BlogController@getCategory', 'as' => 'getcategory']);
+
+    //product
+    Route::get('product',['uses' => 'ProductControllers@getIndex', 'as' => 'product']);
+    Route::get('productsingle',['uses' => 'ProductControllers@productSingle', 'as' => 'productsingle']);
 });

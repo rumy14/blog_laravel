@@ -128,7 +128,7 @@ a { color: #003780; text-decoration: none; }
 /*footer*/
 .site-footer
 {
-	background-color:#26272b;
+	background-color:#061C33;
 	padding:45px 0 20px;
 	font-size:15px;
 	line-height:24px;
@@ -582,4 +582,729 @@ hr.threefour {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
+}
+/*section five home page*/
+
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 1.428571429;
+	border-radius: 15px;
+}
+.btn-circle.btn-lg {
+	width: 50px;
+	height: 50px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 25px;
+}
+.btn-circle.btn-xl {
+	width: 70px;
+	height: 70px;
+	padding: 10px 16px;
+	font-size: 24px;
+	line-height: 1.33;
+	border-radius: 35px;
+}
+/*zigzag hr*/
+.zig-zag-hr {
+	border: none;
+	width: 100%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 6px;
+	background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0,
+	linear-gradient(225deg, #273C75 25%, transparent 25%) -20px 0,
+	linear-gradient(315deg, #273C75 25%, transparent 25%),
+	linear-gradient(45deg, #273C75 25%, transparent 25%);
+	background-size: 20px 20px;
+	background-color: #fff;
+}
+/*home last section*/
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+	background-color: #bbb;
+	color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+}
+.flip-box:hover .flip-box-inner {
+	transform: rotateX(180deg);
+}
+
+.flip-box-back {
+	transform: rotateX(180deg);
+}
+/*home text header*/
+.hedertext {
+	margin: 50px auto;
+	text-align: center;
+}
+.hedertext a {
+	text-decoration: none;
+	-webkit-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-moz-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-ms-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-o-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	/*display: inline-block;*/
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 700;
+	font-family: 'Exo 2';
+	line-height: 0.8;
+	color: #061C33;
+	text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9), 0 1px 0 #7f6303, 0 3px 0 #337AB7, 0 5px 0 #337AB7, 0 7px 0 #337AB7, 0 9px 0 #337AB7, 0 6px 50px rgba(252, 223, 92, 0.8);
+}
+.hedertext a:first-line {
+	font-size: 0.8em;
+}
+.hedertext a:hover {
+	-webkit-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	-moz-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	-ms-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	-o-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	transform: perspective(8em) rotateX(11deg) scale(1.2);
+	text-shadow: 0 -1px 15px black, 0 1px 0 #337AB7, 0 2px 0 #337AB7, 0 0px 0 #337AB7, 0 1px 0 #337AB7, 0 2px 0 #337AB7, 0 2px 30px rgba(252, 223, 92, 0.6);
+}
+											/*===========================================
+												*************************************
+												************product card*************
+												*************************************
+											===========================================*/
+a:link{
+	text-decoration: none;
+}
+.productCardContainer{
+	padding: 5px;
+}
+.productCardContent{
+	position: relative;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 3px solid #2a4185;
+	background: #0050a0;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+.productCardContent .productCardImage{
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.productCardContent .productCardImage img{
+	position: relative;
+	display: block;
+	min-height: 200px;
+	min-width: 100%;
+	max-width: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+.productCardContent:hover .productCardImage img{
+	opacity: 0.8;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.productCardContent .productCardImage .imageCardEffect{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 30px 10px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	text-indent: 9999px;
+}
+.productCardContent .productCardImage .imageCardEffect::before,
+.productCardContent .productCardImage .imageCardEffect::after{
+	pointer-events: none;
+}
+.productCardContent .productCardImage .imageCardEffect::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+
+	-webkit-transform: rotate(45deg) scale(2) translate(0px, -100%);
+	-moz-transform: rotate(45deg) scale(2) translate(0px, -100%);
+	-o-transform: rotate(45deg) scale(2) translate(0px, -100%);
+	-ms-transform: rotate(45deg) scale(2) translate(0px, -100%);
+	transform: rotate(45deg) scale(2.5) translate(0px, -100%);
+}
+.productCardContent:hover .productCardImage .imageCardEffect::before {
+	-webkit-transform: rotate(45deg) scale(2) translate(0px, 100%);
+	-moz-transform: rotate(45deg) scale(2) translate(0px, 100%);
+	-o-transform: rotate(45deg) scale(2) translate(0px, 100%);
+	-ms-transform: rotate(45deg) scale(2) translate(0px, 100%);
+	transform: rotate(45deg) scale(2.5) translate(0px, 100%);
+}
+
+/*======================== Card Details Style */
+.productCardDetails{
+	position: relative;
+	overflow: hidden;
+	background: #FFFFFF;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+.productCardDetails .productCardModel{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding: 20px 20px 10px 20px;
+}
+.productCardDetails .productCardModel a:link, .productCardDetails .productCardModel .accessoryDesc{
+	color: #2a4185;
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	display: block;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+.productCardDetails .productCardModel a span, .productCardDetails .productCardModel .accessoryDesc span{
+	font-size: 18px;
+	display: block;
+}
+.productCardDetails .productCardModel a span b, .productCardDetails .productCardModel .accessoryDesc span b{
+	font-size: 12px;
+	font-weight: normal;
+}
+.productCardContent:hover .productCardDetails .productCardModel a, .productCardContent:hover .productCardDetails .productCardModel .accessoryDesc{
+	color: #FFFFFF;
+}
+.modelCardEffect{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.productCardContent .productCardDetails .modelCardEffect::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #061C33;
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+
+	-webkit-transform: skew(40deg, 0deg) translate(-150%, 0px);
+	-moz-transform: skew(40deg, 0deg) translate(-150%, 0px);
+	-o-transform: skew(40deg, 0deg) translate(-150%, 0px);
+	-ms-transform: skew(40deg, 0deg) translate(-150%, 0px);
+	transform: skew(40deg, 0deg) translate(-150%, 0px);
+}
+.productCardContent:hover .productCardDetails .modelCardEffect::before {
+	-webkit-transform: skew(0deg, 0deg) translate(0%, 0px);
+	-moz-transform: skew(0deg, 0deg) translate(0%, 0px);
+	-o-transform: skew(0deg, 0deg) translate(0%, 0px);
+	-ms-transform: skew(0deg, 0deg) translate(0%, 0px);
+	transform: skew(0deg, 0deg) translate(0%, 0px);
+}
+.productCardContent .productCardDetails .productCardDetailsList {
+	position: relative;
+	height: 150px;
+}
+.productCardContent .productCardDetails .productCardDetailsList .list-group{
+	margin-bottom: 0!important;
+}
+.productCardContent .productCardDetails .productCardDetailsList .list-group .list-group-item{
+	color: #061C33 !important;
+}
+.productCardContent .productCardDetails .productCardDetailsList .list-group .list-group-item .detailIcon{
+	position: relative;
+	width: 40px;
+	padding-left: 10px;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 25px;
+}
+.productCardContent .productCardDetails .productCardDetailsList .list-group .list-group-item .detailInfo{
+	display: table-cell;
+	vertical-align: middle;
+}
+.productCardContent .productCardDetails .accessoryCardDetailsList {
+	position: relative;
+	height: 50px;
+}
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group{
+	margin-bottom: 0!important;
+}
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group .list-group-item{
+	color: #061C33 !important;
+}
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group .list-group-item .detailIcon{
+	position: relative;
+	width: 40px;
+	padding-left: 10px;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 25px;
+}
+.productCardContent .productCardDetails .accessoryCardDetailsList .list-group .list-group-item .detailInfo{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.productCardContent .productCardPrice{
+	position: relative;
+	text-align: center;
+}
+.productCardContent .productCardPrice a, .productCardContent .productCardPrice button{
+	border: none !important;
+	width: 40%;
+	margin: 4% !important;
+	padding: 0 !important;
+	text-align: center;
+	line-height: 35px;
+	background: transparent;
+	color: #061C33;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+.productCardContent:hover .productCardPrice a, .productCardContent:hover .productCardPrice button {
+	background: #061C33;
+	color: #fff;
+}
+.productCardPrice a:hover, .productCardPrice a:focus, .productCardPrice a:hover, .productCardPrice button:focus{
+	background: #061C33;
+	color: #2a4185;
+}
+.productCardContent .productCardPrice .inCart, .productCardPrice .inCart:focus{
+	color: #061C33 !important;
+	background: #81c868 !important;
+}
+.accessoryAdminCard{
+	background: #FFFFFF;
+	padding: 10px;
+}
+
+                                           /*===========================================
+												*************************************
+												************product sigle page*************
+												*************************************
+											===========================================*/
+
+.avFeaturesContainer {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.avFeaturesRapper {
+	background-color:white !important;
+	position: relative;
+	width: 100%;
+	height: 860px;
+	perspective: 1000px;
+	/*background: url(https://ipdoctor.net/uploads/lol.png) right top #171717 no-repeat;*/
+	padding-right: 300px;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-weight: 300;
+}
+
+.avFeaturesRapper h1 {
+	color:black;
+	display: block;
+	text-align: center;
+	padding-top: 45px;
+	font-size: 38px;
+	font-weight: 300;
+}
+
+.screenRap {
+	width: 1080px;
+	height: 550px;
+	position: absolute;
+	top: -51px;
+	right: -37px;
+	z-index: 3;
+	transform: scale(0.34);
+	/*   transform: scale(0.34) rotateX(0deg) rotateZ(6deg) rotateY(-5deg) skewX(-8deg) skewY(0deg);
+      -webkit-transform: scale(0.34) rotateX(0deg) rotateZ(6deg) rotateY(-5deg) skewX(-8deg) skewY(0deg);
+      -moz-transform: scale(0.34) rotateX(0deg) rotateZ(6deg) rotateY(-5deg) skewX(-8deg) skewY(0deg); */
+}
+
+.screenRap div {
+	/*   width: 456px;
+      height: 311px; */
+	width: 340px;
+	height: 300px;
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	float: left;
+	cursor: pointer;
+	margin: 8px;
+	text-indent: -9999px;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	position: relative;
+	z-index: 1;
+	box-shadow: rgba(0, 0, 0, 0.23) 19px 19px 30px;
+	left: 0;
+}
+
+.screenRap:hover div {
+	animation: none !important;
+}
+
+.screenRap div:hover {
+	z-index: 2;
+	left: -70px !important;
+	transform: scale(1.8, 1.8) !important;
+}
+
+.screenRap .avTile {
+	background: url(https://ipdoctor.net/uploads/patching.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+}
+
+.screenRap .firewallTile {
+	background: url(https://ipdoctor.net/uploads/protected-pages.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+}
+
+.screenRap .backupTile {
+	background: url(https://ipdoctor.net/uploads/application.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+
+	animation: tileLoadScale .6s 2.2s forwards;
+	-webkit-animation: tileLoadScale .6s 2.2s forwards;
+	-moz-animation: tileLoadScale .6s 2.2s forwards;
+}
+
+.screenRap .vulnerabilitiesTile {
+	background: url(https://ipdoctor.net/uploads/bot.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+}
+
+.screenRap .spamfilterTile {
+	background: url(https://ipdoctor.net/uploads/ml.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+
+	animation: tileLoadScale .6s 2.7s forwards;
+	-webkit-animation: tileLoadScale .6s 2.7s forwards;
+	-moz-animation: tileLoadScale .6s 2.7s forwards;
+}
+
+.screenRap .smpTile {
+	background: url(https://ipdoctor.net/uploads/whitelist.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+
+	animation: tileLoadScale .6s 2s forwards;
+	-webkit-animation: tileLoadScale .6s 2s forwards;
+	-moz-animation: tileLoadScale .6s 2s forwards;
+}
+
+.screenRap .tuneupTile {
+	background: url(https://ipdoctor.net/uploads/http.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+}
+
+.screenRap .idpTile {
+	background: url(https://ipdoctor.net/uploads/geo1.svg) no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+}
+
+.screenRap .idpTile1 {
+	background: url("/images/bubble.svg") no-repeat;
+	background-position: center;
+	background-size: 160px;
+	background-color: white;
+}
+
+.feature {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+	transition: opacity .1s ease;
+	-webkit-transition: opacity .1s ease;
+	-moz-transition: opacity .1s ease;
+	width: 30%;
+	top: 188px;
+	left: 95px;
+}
+
+.feature.active {
+	opacity: 1;
+}
+
+.feature h2 {
+	font-size: 37px;
+	padding: 12px 0 10px 72px;
+	margin: 0 0 10px -120px;
+	opacity: 0;
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+}
+
+.feature.active h2 {
+	opacity: 1;
+	margin: 0 0 10px -72px;
+	color: black;
+	font-weight: 400;
+}
+
+.feature div {
+	width: 0;
+	opacity: 0;
+	transition: width .3s ease, opacity .7s ease;
+	-webkit-transition: width .3s ease, opacity .7s ease;
+	-moz-transition: width .3s ease, opacity .7s ease;
+}
+
+.feature.active div {
+	width: 100%;
+	opacity: 1;
+}
+
+.feature div span {
+	width: 100%;
+	border-top: #fff solid 1px;
+	height: 1px;
+	display: block;
+	opacity: .4;
+}
+
+.feature p {
+	font-size: 15px;
+	color: black;
+	line-height: 1.8;
+	padding: 32px 32px 0 0;
+	opacity: 0;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+
+.feature.active p {
+	opacity: 1;
+}
+
+.smallNotice {
+	font-style: italic;
+	opacity: .5;
+	font-size: 11px;
+}
+
+.avFeature h2 {
+	background: url(https://ipdoctor.net/uploads/patching.svg) left center no-repeat;
+}
+
+.firewallFeature h2 {
+	background: url(https://ipdoctor.net/uploads/protected-pages.svg) left center no-repeat;
+}
+
+.backupFeature h2 {
+	background: url(https://ipdoctor.net/uploads/application.svg) left center no-repeat;
+}
+
+.vulnerabilitiesFeature h2 {
+	background: url(https://ipdoctor.net/uploads/bot.svg) left center no-repeat;
+}
+
+.spamfilterFeature h2 {
+	background: url(https://ipdoctor.net/uploads/ml.svg) left center no-repeat;
+}
+
+.smpFeature h2 {
+	background: url(https://ipdoctor.net/uploads/whitelist.svg) left center no-repeat;
+}
+
+.tuneupFeature h2 {
+	background: url(https://ipdoctor.net/uploads/http.svg) left center no-repeat;
+}
+
+.idpFeature h2 {
+	background: url(https://ipdoctor.net/uploads/geo1.svg) left center no-repeat;
+}
+
+
+.hoverIcon {
+	background: url(https://ipdoctor.net/uploads/mouse.svg) center top no-repeat;
+	color: black;
+	font-size: 11px;
+	text-transform: uppercase;
+	position: absolute;
+	width: 140px;
+	text-align: center;
+	left: 50%;
+	margin-left: -192px;
+	padding-top: 41px;
+}
+
+@keyframes tileLoadScale {
+	0% {}
+	50% {
+		transform: scale(1.4, 1.4);
+		left: -50px;
+		z-index: 2;
+	}
+100 {}
+}
+
+@-webkit-keyframes tileLoadScale {
+	0% {}
+	50% {
+		transform: scale(1.4, 1.4);
+		-webkit-transform: scale(1.4, 1.4);
+		-moz-transform: scale(1.4, 1.4);
+		left: -50px;
+		z-index: 2;
+	}
+100 {}
+}
+
+@-moz-keyframes tileLoadScale {
+	0% {}
+	50% {
+		transform: scale(1.4, 1.4);
+		-moz-transform: scale(1.4, 1.4);
+		-moz-transform: scale(1.4, 1.4);
+		left: -50px;
+		z-index: 2;
+	}
+100 {}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.avFeaturesContainer{
+		display:none;
+	}
+	.illwidth{
+		display:none;
+	}
+}
+
+.browser-tab-bar{
+	height: 20px;
+	line-height: 20px;
+	background-color: #EEEEEE;
+	border-top-left-radius: 6px;
+	z-index: 100000;
+	border-top-right-radius: 6px;
+	display: block;
+}
+.window-control{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 3px;
+	box-sizing: border-box;
+}
+.window-controls{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	padding-top: 5px;
+	margin: 0px 0px 0px 10px;
+}
+
+.window-control-red{
+	background-color: #EE5C55;
+	border: 1px solid #e93027;
+}
+.window-control-orange{
+	background-color: #F8BC32;
+	border: 1px solid #efa908;
+}
+.window-control-green{
+	background-color: #62CB43;
+	border: 1px solid #4cac2f;
 }

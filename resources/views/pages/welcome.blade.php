@@ -40,71 +40,15 @@
                             </div>
                         </div>
                     </div>
-{{--                    <a class="left carousel-control" href="#carousel-fixed-height" role="button" data-slide="prev">--}}
-{{--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--}}
-{{--                        <span class="sr-only">Previous</span>--}}
-{{--                    </a>--}}
-{{--                    <a class="right carousel-control" href="#carousel-fixed-height" role="button" data-slide="next">--}}
-{{--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--}}
-{{--                        <span class="sr-only">Next</span>--}}
-{{--                    </a>--}}
                 </div>
             </section>
-            <![endif]-->
         </div>
     </div><br>
 
     <div class="row">
         <div class="col-md-1">
         </div>
-        <div class="col-md-2">
-            <div class="row">
-                <div class="list-group">
-                    <div class="list-group-item active">
-                        <h4 class="list-group-item-heading">Mission</h4>
-                        <ul class="mision">
-                            <li>Fun & Free Education</li>
-                        </ul>
-                        <h4 class="list-group-item-heading">Vision</h4>
-                        <ul class="vision">
-                            <li>Bring all courses</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="list-group">
-                    <div class="list-group-item active">
-                        <h4 class="list-group-item-heading">Courses</h4>
-                        <ul class="vision">
-                            <li>ITEE Exam</li>
-                            <li>Apps Development</li>
-                            <li>Software Testing</li>
-                            <li>CS Basic Courses</li>
-                            <li>Higher Secondary</li>
-                            <li>School Programming</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="list-group">
-                    <div class="list-group-item active">
-                        <h4 class="list-group-item-heading">Our Wings</h4>
-                        <ul class="vision">
-                            <li>Training</li>
-                            <li>Food Items</li>
-                            <li>Textiles</li>
-                            <li>Pharmacy</li>
-                            <li>Hospital</li>
-                            <li>Local Business</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-10">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h1 class="panel-title">Apps Design & Development</h1>
@@ -146,36 +90,6 @@
             </div>
         </div>
 
-        <div class="col-md-2">
-            <div class="row">
-                <div class="card mb-3">
-                    <h4 class="card-header">Testimonial</h4>
-                    <img style="height: 200px; width: 100%; display: block;" src="{{{ asset('images/testimonialthumbnail.png') }}}" alt="testimonial">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        On Going Project
-                        <span class="badge badge-primary badge-pill">14</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        No. of Products
-                        <span class="badge badge-primary badge-pill">21</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Customers
-                        <span class="badge badge-primary badge-pill">100</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="card mb-3">
-                    <img style="height: 200px; width: 100%; display: block;" src="{{{ asset('images/Ad-Space-300x250.png') }}}" alt="Space for Ad">
-                </div>
-            </div>
-        </div>
         <div class="col-md-1">
         </div>
     </div>
@@ -184,13 +98,14 @@
         <div class="col-md-1">
         </div>
         <div class="col-md-10">
+            <hr class="zig-zag-hr">
             <section class="wrapper">
                 <div class="container-fostrap">
                     <div>
-                        <img src="https://4.bp.blogspot.com/-7OHSFmygfYQ/VtLSb1xe8kI/AAAAAAAABjI/FxaRp5xW2JQ/s320/logo.png" class="fostrap-logo"/>
-{{--                        <h1 class="heading">--}}
-{{--                            Bootstrap Card Responsive--}}
-{{--                        </h1>--}}
+{{--                        <img src="https://4.bp.blogspot.com/-7OHSFmygfYQ/VtLSb1xe8kI/AAAAAAAABjI/FxaRp5xW2JQ/s320/logo.png" class="fostrap-logo"/>--}}
+                        <div class="hedertext">
+                            <a href="">Our Solution</a>
+                        </div>
                     </div>
                     <div class="content">
                         <div class="container">
@@ -198,12 +113,11 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="card">
                                         <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                                            <img src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
+                                            <img src="{{{ asset("/images/our_solutions_001.jpg") }}}" />
                                         </a>
                                         <div class="card-content">
                                             <h4 class="card-title">
-                                                <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"> Bootstrap 3 Carousel FadeIn Out Effect
-                                                </a>
+                                                <p>Advance Blog System</p>
                                             </h4>
                                             <p class="">
                                                 Tutorial to make a carousel bootstrap by adding more wonderful effect fadein ...
@@ -219,12 +133,11 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="card">
                                         <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
-                                            <img src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s400/material%2Bnavbar.jpg" />
+                                            <img src="{{{ asset("/images/our_solutions_002.jpg") }}}" />
                                         </a>
                                         <div class="card-content">
                                             <h4 class="card-title">
-                                                <a href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html"> Material Design Responsive Menu
-                                                </a>
+                                                <p>Modern Ecommerce System</p>
                                             </h4>
                                             <p class="">
                                                 Material Design is a visual programming language made by Google. Language programming...
@@ -240,12 +153,11 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="card">
                                         <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
-                                            <img src="https://4.bp.blogspot.com/-TDIJ17DfCco/Vtneyc-0t4I/AAAAAAAABmk/aa4AjmCvRck/s1600/cover.jpg" />
+                                            <img src="{{{ asset("/images/our_solutions_003.jpg") }}}" />
                                         </a>
                                         <div class="card-content">
                                             <h4 class="card-title">
-                                                <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">5  Button Hover Animation Effects
-                                                </a>
+                                                <p>User Friendly Payroll System</p>
                                             </h4>
                                             <p class="">
                                                 tutorials button hover animation, although very much a hover button is very beauti...
@@ -272,12 +184,15 @@
         <div class="col-md-1">
         </div>
         <div class="col-md-10">
-            <hr class="threefour" />
+            <hr class="zig-zag-hr">
+            <div class="hedertext">
+                <a href="">Team Member</a>
+            </div>
             <div class="wrapper">
                 <div class="tile job-bucket">
                     <div class="front">
                         <div class="contents">
-                            <img src="http://imgsg.jobing.com/company/images/142939/t/taxi-drivers.jpg"/>
+                            <img src="{{{ asset("/images/team_member_001.jpg") }}}" />
                             <h3>Taxi Drivers</h3>
                             <p>"Driving here at Yellow Cab gives me the freedom and flexibility to make money at my pace. Being my own boss allows me to work harder, the more I work the more I can bring in."</p>
                             <br>
@@ -296,7 +211,7 @@
                 <div class="tile job-bucket">
                     <div class="front">
                         <div class="contents">
-                            <img src="http://imgsg.jobing.com/company/images/142939/t/sedan-drivers.jpg"/>
+                            <img src="{{{ asset("/images/team_member_001.jpg") }}}" />
                             <h3>Sedan Drivers</h3>
                             <p>"Being able to offer a higher level of service, wearing a black suit and tie helps make me stand out from the crowd. When I meet someone for the first time I feel they are more relaxed...</p>
                             <br>
@@ -314,7 +229,7 @@
                 <div class="tile job-bucket">
                     <div class="front">
                         <div class="contents">
-                            <img src="http://imgsg.jobing.com/company/images/142939/t/customer-service-representitives.jpg"/>
+                            <img src="{{{ asset("/images/team_member_001.jpg") }}}" />
                             <h3>Dispatchers</h3>
                             <p>"Coming to work every day is exciting because I love my job and the people I work with. I enjoy interacting with people and this allows me to do so, but in a safe working environment with flexible shifts.</p>
                             <br>
@@ -331,7 +246,7 @@
                 <div class="tile job-bucket">
                     <div class="front">
                         <div class="contents">
-                            <img src="http://imgsg.jobing.com/company/images/142939/t/customer-service-representitives.jpg"/>
+                            <img src="{{{ asset("/images/team_member_001.jpg") }}}" />
                             <h3>Dispatchers</h3>
                             <p>"Coming to work every day is exciting because I love my job and the people I work with. I enjoy interacting with people and this allows me to do so, but in a safe working environment with flexible shifts.</p>
                             <br>
@@ -343,6 +258,267 @@
                         <a href="#">Customer Service Representatives Phoenix</a>
                         <a href="#">Street Team</a>
                         <a href="#">View All Jobs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+            <hr class="zig-zag-hr">
+            <div class="hedertext">
+                <a href="">Pricing</a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon glyphicon-user"></i></button>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead">
+                                    <strong> What can I do for you?</strong>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush text-justify">
+                                <li class="list-group-item">
+                                    Self employed person
+                                    <span class="glyphicon glyphicon-ok pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Start-up projects
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Multiple site Commercial license
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Technical Support
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                            </ul>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon glyphicon-user"></i></button>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead">
+                                    <strong> What can I do for you?</strong>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush text-justify">
+                                <li class="list-group-item">
+                                    Self employed person
+                                    <span class="glyphicon glyphicon-ok pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Start-up projects
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Multiple site Commercial license
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Technical Support
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                            </ul>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon glyphicon-user"></i></button>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead">
+                                    <strong> What can I do for you?</strong>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush text-justify">
+                                <li class="list-group-item">
+                                    Self employed person
+                                    <span class="glyphicon glyphicon-ok pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Start-up projects
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Multiple site Commercial license
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Technical Support
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                            </ul>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon glyphicon-user"></i></button>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead">
+                                    <strong> What can I do for you?</strong>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush text-justify">
+                                <li class="list-group-item">
+                                    Self employed person
+                                    <span class="glyphicon glyphicon-ok pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Start-up projects
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Multiple site Commercial license
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                                <li class="list-group-item">
+                                    Technical Support
+                                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                                </li>
+                            </ul>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+            <hr class="zig-zag-hr">
+            <div class="hedertext">
+                <a href="">Honorable Clients List</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Front Side</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Back Side</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

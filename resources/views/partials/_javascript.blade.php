@@ -91,7 +91,41 @@
     });
 </script>
 
-
+<script>
+    $('.avTile').hover(function() {
+        $('.avFeature').toggleClass('active');
+    });
+    $('.firewallTile').hover(function() {
+        $('.firewallFeature').toggleClass('active');
+    });
+    $('.backupTile').hover(function() {
+        $('.backupFeature').toggleClass('active');
+    });
+    $('.vulnerabilitiesTile').hover(function() {
+        $('.vulnerabilitiesFeature').toggleClass('active');
+    });
+    $('.spamfilterTile').hover(function() {
+        $('.spamfilterFeature').toggleClass('active');
+    });
+    $('.smpTile').hover(function() {
+        $('.smpFeature').toggleClass('active');
+    });
+    $('.tuneupTile').hover(function() {
+        $('.tuneupFeature').toggleClass('active');
+    });
+    $('.idpTile').hover(function() {
+        $('.idpFeature').toggleClass('active');
+    });
+    $('.idpTile1').hover(function() {
+        $('.idpFeature1').toggleClass('active');
+    });
+    $('.parentalTile').hover(function() {
+        $('.parentalFeature').toggleClass('active');
+    });
+    $('.parentalTile').hover(function() {
+        $('.parentalFeature1').toggleClass('active');
+    });
+</script>
 
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
